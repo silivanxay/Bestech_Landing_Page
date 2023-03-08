@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    font-family: Phetsarath_OT;
+}
+@font-face {
+    font-family: 'Phetsarath_OT';
+    src: url('../public/Font/phetsarath_ot.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
