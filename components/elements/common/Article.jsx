@@ -8,7 +8,7 @@ export default function Article(props) {
       {/* <span className="inline-block px-2 py-px mb-4 text-xs leading-5 uppercase bg-blue-500 text-gray-700 rounded-9xl">
         {content.header}
       </span> */}
-      <h5 data-text={content.headline} className="animations-text-cur underline underline-offset-8 mb-6 text-3xl font-bold leading-tight tracking-tight md:text-2xl lg:text-6xl">
+      <h5 data-text={content.headline} className="text-black dark:text-white underline-offset-8 mb-6 text-3xl font-bold leading-tight tracking-tight md:text-2xl lg:text-6xl">
         {content.headline}
       </h5>
       <ul>

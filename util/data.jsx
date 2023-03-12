@@ -1,6 +1,6 @@
 export const heroContent = {
   // header: "e-commerce",
-  headline: "Bestech SaaS",
+  headline: "Bestech SaaS Consultancy",
   context: [
     {
       text: "Bestech SaaS Consultancy Bringing affordable high quality software as a service with simplicity to people.",

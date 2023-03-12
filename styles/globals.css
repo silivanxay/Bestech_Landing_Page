@@ -17,7 +17,7 @@
 .animations-text-cur{
     position:relative;
     font-family:sans-serif;
-    -webkit-text-stroke:0.1vw #2843ad21;
+    -webkit-text-stroke:1.1vw #2843ad21;
     text-transform:uppercase;
 }
 
