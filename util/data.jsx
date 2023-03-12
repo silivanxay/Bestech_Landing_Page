@@ -137,7 +137,7 @@ export const db_out_team = {
   context: [
     {
       img: "/flex-ui-assets/images/out_team/Chairman.png",
-      name: "ທ່ານ ໂພອາກອນ ຈັນທະມົນຕີ",
+      name: "ທ່ານ ໄພອາກອນ ຈັນທະມົນຕີ",
       title: 'Chairman',
       WA: '2056395659',
       FB: '#',
