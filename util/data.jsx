@@ -1,6 +1,6 @@
 export const heroContent = {
   // header: "e-commerce",
-  headline: "Bestech_SaaS",
+  headline: "Bestech SaaS",
   context: [
     {
       text: "Bestech SaaS Consultancy Bringing affordable high quality software as a service with simplicity to people.",
@@ -131,28 +131,54 @@ export const dMarketingContent = {
   ],
 };
 
-export const dboutteam = {
-  headline: "Digital Marketing",
+export const db_out_team = {
+  headline: "ທີມງານ Bestech",
+  wallpaper: "/flex-ui-assets/images/out_team/Wallapper.png",
   context: [
     {
-      img: "/flex-ui-assets/icons/photo-1634193295627-1cdddf751ebf.jpeg",
-      name: "UserName1",
-      title: 'CEO/Devalopper',
+      img: "/flex-ui-assets/images/out_team/Chairman.png",
+      name: "ທ່ານ ໂພອາກອນ ຈັນທະມົນຕີ",
+      title: 'Chairman',
+      WA: '2056395659',
+      FB: '#',
+      IG: '#',
+      status: 'Chairman',
     },
     {
-      img: "/flex-ui-assets/icons/photo-1634896941598-b6b500a502a7.jpeg",
-      name: "UserName2",
-      title: 'CEO/Devalopper',
+      img: "/flex-ui-assets/images/out_team/silivanxay.png",
+      name: "Silivanxay Phetsouvanh",
+      title: 'Advisor',
+      WA: '2056395659',
+      FB: 'https://web.facebook.com/boui.psv?comment_id=Y29tbWVudDoyMjA4OTg0MzM4MDE1NDVfMjU4MTQ0MzgyNTMzOTY4OQ%3D%3D',
+      IG: '#',
+      status: 'Advisor',
     },
     {
-      img: "/flex-ui-assets/icons/photo-1634926878768-2a5b3c42f139.jpeg",
-      name: "UserName3",
-      title: 'CEO/Devalopper',
+      img: "/flex-ui-assets/images/out_team/Thavisouk .png",
+      name: "Thavisouk Minalavong",
+      title: 'SN/Devalopper',
+      WA: '2099223454',
+      FB: 'https://web.facebook.com/profile.php?id=100034302293568',
+      IG: '#',
+      status: 'Dev',
     },
     {
-      img: "/flex-ui-assets/icons/photo-1635003913011-95971abba560.jpeg",
-      name: "UserName3",
-      title: 'CEO/Devalopper',
+      img: "/flex-ui-assets/images/out_team/Med.png",
+      name: "Med Saignaleuth",
+      title: 'SN/Devalopper',
+      WA: '2093344708',
+      FB: 'https://web.facebook.com/profile.php?id=100008402837765',
+      IG: '#',
+      status: 'Dev',
+    },
+    {
+      img: "/flex-ui-assets/images/out_team/Apple.png",
+      name: "Apple Phomsungcan",
+      title: 'SN/Devalopper',
+      WA: '2095188702',
+      FB: 'https://web.facebook.com/profile.php?id=100012618940519',
+      IG: 'https://www.instagram.com/applecup12/?hl=th',
+      status: 'Dev',
     },
   ],
 }

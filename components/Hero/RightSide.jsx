@@ -21,7 +21,7 @@ export default function RightSide() {
       </div>
 
       <div className="relative flex justify-center items-center opacity-0 dark:opacity-100 md:-translate-y-10">
-        <Image src={GIF3} className='z-1 rounded-full border-8 md:-translate-y-40 md:-translate-x-20' width={1100} height={1050} />
+        <Image src={GIF3} className='z-1 rounded-full border-8 md:-translate-y-40 md:-translate-x-20' width={1100} height={1050} alt='darkmode'/>
         <span className="absolute gap-5 grid-cols-1">
           <div className="text-gray-800 dark:text-white font-bold translate-y-10 border-inherit border-2 border-gray-100/75 px-10 z-2 backdrop-blur-lg rounded-full p-2 mb-3">Application Development</div>
           <div className="text-gray-800 dark:text-white font-bold translate-y-10 border-inherit border-2 border-gray-100/75 px-10 z-2 backdrop-blur-lg rounded-full p-2">Website Development</div>

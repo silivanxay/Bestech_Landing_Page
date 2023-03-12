@@ -2,7 +2,7 @@ import React from "react";
 export const About = () => {
   return (
     <div id="about">
-      <section className="py-24 md:pb-28 text-coolGray-900 dark:text-white">
+      <section className="py-24 md:pb-28 text-coolGray-900 dark:text-white px-5">
         <div className="container px-4 mx-auto">
           <div data-aos="fade-up" className="flex flex-wrap -mx-4">
             <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">

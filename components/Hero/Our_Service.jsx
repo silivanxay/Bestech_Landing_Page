@@ -33,7 +33,7 @@ export default function Our_Service() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full md:h-full pt-20 lg:py-0 relative grid-cols-4 lg:-mt-0 -mt-10">
+      <div className="select-none w-full h-full md:h-full pt-20 lg:py-0 relative grid-cols-4 lg:-mt-0 -mt-10">
         <div className="absolute z-1 lg:top-0 top-20">
           <Image src={features} alt='IMG'/>
         </div>
