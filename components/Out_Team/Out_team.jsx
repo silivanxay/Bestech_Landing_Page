@@ -3,14 +3,13 @@ import Image from "next/image";
 import whatsapp from '../../public/flex-ui-assets/icons/whatsapp.png'
 import facebook from '../../public/flex-ui-assets/icons/facebook.png'
 import IG from '../../public/flex-ui-assets/icons/instagram.png'
-import GO from '../../public/flex-ui-assets/icons/photo-1634193295627-1cdddf751ebf.jpeg'
 import { db_out_team } from '../../util/data'
 import Out_team_dev from './Out_team_dev';
 
 export default function Out_team() {
     return (
         <>
-            <div className="w-full h-full flex justify-center items-center" id='outteam'>
+            <div className="w-full h-full flex justify-center items-center select-none" id='outteam'>
                 <div class="flex items-center justify-center min-h-screen">
                     <div class="flex flex-col">
                         <div class="flex flex-col mt-8">
@@ -28,7 +27,8 @@ export default function Out_team() {
 
                                 <div class="flex flex-wrap justify-center">
                                     {db_out_team.context.filter((o) => o.status === 'Chairman' || o.status === 'Advisor').map((item) => (
-                                        <div data-aos="fade-up" class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                        <div data-aos="fade-up" class="relative w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                            <div className="absolute z-10 w-full h-[380px] top-0"></div>
                                             <div class="flex flex-col">
                                                 <a href="#_" class="mx-auto">
                                                     <div class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 relative h-[303.3px] w-[250px] overflow-hidden">

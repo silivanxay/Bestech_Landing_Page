@@ -15,6 +15,7 @@
     "classnames": "^2.3.1",
     "daisyui": "^2.25.0",
     "date-fns": "^2.29.2",
+    "framer-motion": "^10.2.5",
     "jwt-decode": "^3.1.2",
     "multer": "^1.4.5-lts.1",
     "next": "^12.1.6",
