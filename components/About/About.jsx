@@ -1,4 +1,7 @@
 import React from "react";
+import img from '../../public/flex-ui-assets/gif/84565-about-us.gif'
+import Image from "next/image";
+
 export const About = () => {
   return (
     <div id="about">
@@ -7,8 +10,8 @@ export const About = () => {
           <div data-aos="fade-up" className="flex flex-wrap -mx-4">
             <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
               <div className="relative transition-all h-full overflow-hidden max-w-max mx-auto rounded-md">
-                <img
-                  src="/flex-ui-assets/gif/84565-about-us.gif"
+                <Image
+                  src={img}
                   alt="image"
                   className="cursor-pointer transition ease-in-out hover:scale-125 duration-700"
                 />

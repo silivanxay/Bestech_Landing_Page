@@ -19,8 +19,10 @@ export default function List_X() {
           <div class="flex flex-col">
             <a href="#_" class="mx-auto">
               <div class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 relative h-[303.3px] w-[250px] overflow-hidden">
-                <img src={db_out_team.wallpaper} alt='Out_team' className='h-[60%] w-full rounded-lg absolute z-0 bottom-0' />
-                <img src={item.img} alt='Out_team' className='h-full w-full rounded-lg absolute object-cover' />
+                <span className='h-[60%] w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-500 to-blue-800 absolute z-0 bottom-0'></span>
+                <span className='h-full w-full rounded-lg absolute z-10 object-cover'>
+                    <Image src={item.img} alt='Out_team' width={300} height={370} objectFit='cover'/>
+                </span>
               </div>
             </a>
 

@@ -156,7 +156,7 @@ export const db_out_team = {
     {
       img: "/flex-ui-assets/images/out_team/Thavisouk .png",
       name: "Thavisouk Minalavong",
-      title: 'SN/Devalopper',
+      title: 'SN/Developper',
       WA: '2099223454',
       FB: 'https://web.facebook.com/profile.php?id=100034302293568',
       IG: '#',
@@ -165,7 +165,7 @@ export const db_out_team = {
     {
       img: "/flex-ui-assets/images/out_team/Med.png",
       name: "Med Saignaleuth",
-      title: 'SN/Devalopper',
+      title: 'SN/Developper',
       WA: '2093344708',
       FB: 'https://web.facebook.com/profile.php?id=100008402837765',
       IG: '#',
@@ -174,7 +174,7 @@ export const db_out_team = {
     {
       img: "/flex-ui-assets/images/out_team/Apple.png",
       name: "Apple Phomsungcan",
-      title: 'SN/Devalopper',
+      title: 'SN/Developper',
       WA: '2095188702',
       FB: 'https://web.facebook.com/profile.php?id=100012618940519',
       IG: 'https://www.instagram.com/applecup12/?hl=th',
