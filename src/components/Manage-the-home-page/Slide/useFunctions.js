@@ -8,11 +8,15 @@ export default function useFunctions() {
     const navigate = useNavigate()
 
     const [API, setAPI] = useState([])
+    const [Page, setPage] = useState(1)
+    const [Count, setCount] = useState(0)
 
     const [reducer, setReducer] = useReducer(x => x + 1, 0)
     useEffect(() => {
-        axios.get(url.Mainurl + url.getslide).then((res) => {
+        axios.get(url.Mainurl + url.getslide + '?page=' + pageN).then((res) => {
             setAPI(res.data.results)
+            setPage(res.data.total_pages)
+            setCount(res.data.count)
         })
     }, [reducer])
 
@@ -108,10 +112,30 @@ export default function useFunctions() {
         })
     }
 
+    const [pageN, setPangN] = useState(1)
+    function next() {
+        if(pageN < Page) {
+            setPangN(pageN +1)
+            setReducer()
+        }
+    }
+    function black() {
+        if(pageN > 1) {
+            setPangN(pageN -1)
+            setReducer()
+        }
+    }
+
     return {
         API,
         Submit,
         delslide,
         editSubmit,
+
+        next,
+        black,
+        pageN,
+        Page,
+        Count,
     }
 }

@@ -21,7 +21,7 @@ export default function Update_slide(props) {
     return (
         <>
             <button variant='primary' className='btn btn-sm btn-primary' onClick={handleShow}>
-                <i class="bi bi-pencil-square"></i> | edit
+                <i class="bi bi-pencil-square"></i> | ແກ້ໄຂ
             </button>
             <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header>
