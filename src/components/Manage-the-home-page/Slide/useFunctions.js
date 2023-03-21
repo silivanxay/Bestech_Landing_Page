@@ -77,9 +77,41 @@ export default function useFunctions() {
         })
     }
 
+    function editSubmit(e) {
+        e.preventDefault()
+        const formData = new FormData()
+        formData.append('image', e.target[1].files[0])
+        formData.append('title', e.target[2].value)
+
+        axios.patch(url.Mainurl + url.patchslide + e.target[0].value + '/', (
+            e.target[1].value === '' ? {
+                "title": e.target[2].value
+            } : formData
+        )).then((res) => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            setReducer()
+            navigate('/slider')
+            Toast.fire({
+                icon: 'success',
+                title: 'ແກ້ໄຂຂໍ້ມູນຂໍ້ມູນສຳເລັດ'
+            })
+        })
+    }
+
     return {
         API,
         Submit,
         delslide,
+        editSubmit,
     }
 }
