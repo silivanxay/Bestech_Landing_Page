@@ -1,0 +1,14 @@
+.grid-item-about {
+    overflow-y: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(67, 77, 88, 0.185);
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+
+#IMG-Title {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}

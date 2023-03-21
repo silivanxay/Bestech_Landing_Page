@@ -1,0 +1,148 @@
+.group-item-event {
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+}
+.group-item-event:hover > :not(:hover){
+    cursor: pointer;
+    opacity: .5;
+    background-color: rgba(233, 233, 233, 0.411);
+    transition: .5s;
+    filter: blur(1px);
+}
+.z-index-event {
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+}
+#IMG_EVENT {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1000px){
+    .absolute-event {
+        display: flex;
+        position: absolute;
+        height: 200px;
+        width: 25%;
+        padding-right: 10%;
+        background-image: linear-gradient(to left, rgba(90, 118, 122, 0.068), rgba(99, 107, 114, 0.493), rgba(53, 91, 116, 0.781));
+        box-shadow: 100px 0px 76px -32px rgba(90, 118, 122, 0.068);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+    }
+    .absolute-event-right {
+        display: flex;
+        position: absolute;
+        height: 200px;
+        width: 25%;
+        padding-left: 10%;
+        background-image: linear-gradient(to left, rgba(53, 91, 116, 0.781), rgba(99, 107, 114, 0.493), rgba(90, 118, 122, 0.068));
+        box-shadow: -100px 0px 76px -32px rgba(90, 118, 122, 0.068);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 24px;
+        font-weight: bold;
+        right: 0%;
+        z-index: 1;
+    }
+}
+@media (max-width: 1000px){
+    .absolute-event {
+        display: flex;
+        position: absolute;
+        height: 200px;
+        width: 25%;
+        padding-right: 5%;
+        background-image: linear-gradient(to left, rgba(90, 118, 122, 0.068), rgba(99, 107, 114, 0.493), rgba(53, 91, 116, 0.781));
+        box-shadow: 100px 0px 76px -32px rgba(90, 118, 122, 0.068);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .absolute-event-right {
+        display: flex;
+        position: absolute;
+        height: 200px;
+        width: 25%;
+        padding-left: 5%;
+        background-image: linear-gradient(to left, rgba(53, 91, 116, 0.781), rgba(99, 107, 114, 0.493), rgba(90, 118, 122, 0.068));
+        box-shadow: -100px 0px 76px -32px rgba(90, 118, 122, 0.068);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 24px;
+        font-weight: bold;
+        right: 0%;
+    }
+}
+@media (min-width: 600px) {
+    .absolute-event-repone{
+        display: none;
+        opacity: calc(0);
+        z-index: 1;
+        transition: .5s;
+    }
+    .display-respone {
+        display: flex;
+    }
+}
+@media (max-width: 600px){
+    .display-respone {
+        display: block;
+        text-align: center;
+    }
+    .absolute-event {
+        opacity: calc(0);
+        z-index: 1;
+        transition: .5s;
+    }
+    .absolute-event-right {
+        display: none;
+        z-index: 1;
+        opacity: calc(0);
+        transition: .5s;
+    }
+    .absolute-event-repone {
+        display: flex;
+        opacity: calc(1);
+        z-index: 1;
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        padding-right: 5%;
+        background-color: rgba(53, 91, 116, 0.781);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.hover-event:hover .absolute-event{
+    width: 35%;
+}
+.hover-event:hover .absolute-event-right{
+    width: 35%;
+}

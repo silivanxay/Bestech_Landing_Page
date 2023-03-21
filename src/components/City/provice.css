@@ -1,0 +1,51 @@
+.animabtn {
+    transition: all .5s;
+    animation: animbtn 1s ease-in-out infinite;
+}
+
+@keyframes animbtn {
+    0% {
+        border: 1px solid rgb(219, 211, 211);
+    }
+    50% {
+        border: 1px solid red;
+    }
+    100% {
+        border: 1px solid rgb(219, 211, 211);
+    }
+}
+
+.w-style-dropdows {
+    width: 20vh;
+}
+.border-btn-group {
+    border: 1px solid rgba(54, 70, 71, 0.199);
+}
+.border-btn-true {
+    background-color: rgba(49, 47, 61, 0.205);
+}
+
+/* List Group province  */
+.drop-event-dis {
+    position: relative;
+    transition: all .5s;
+}
+.list-group-item-province {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    left: 0;
+    top: 120%;
+    background-color: white;
+}
+
+@media (max-width: 400px){
+    .list-group-item-province {
+        width: 156%;
+    }
+}
+
+.list-hover:hover {
+    background-color: rgba(66, 108, 145, 0.158);
+}

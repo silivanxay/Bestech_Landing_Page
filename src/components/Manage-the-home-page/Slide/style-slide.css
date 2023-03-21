@@ -1,0 +1,41 @@
+#IMG-Slide {
+    width: 100%;
+    max-height: 45vh;
+    object-fit: cover;
+}
+
+#IMG-Slide-loop {
+    width: 100%;
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+.active-title-img-left {
+    position: absolute;
+    left: 0;
+    color: white;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(275deg, #ffffff00 0%, rgba(0, 72, 131, 0.788) 100%);
+    backdrop-filter: blur(3px);
+}
+
+.active-title-img-right {
+    position: absolute;
+    right: 0;
+    color: white;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(-275deg, #ffffff00 0%, rgba(0, 72, 131, 0.788) 100%);
+    backdrop-filter: blur(3px);
+}

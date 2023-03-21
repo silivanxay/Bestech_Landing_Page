@@ -1,0 +1,89 @@
+@media (max-width: 570px) {
+    .FirstPrize {
+        height: 570px;
+        width: 300px;
+    }
+
+    .SecondPrize {
+        height: 570px;
+        padding-bottom: 50px;
+        width: 300px;
+    }
+
+    .ThirdPrize {
+        height: 570px;
+        width: 300px;
+    }
+    .display-flex {
+        display: block;
+    }
+    .disnone {
+        display: none;
+    }
+
+}
+
+@media (min-width: 570px) {
+    .FirstPrize {
+        height: 665px;
+        width: 350px;
+    }
+
+    .SecondPrize {
+        height: 615px;
+        width: 350px;
+    }
+
+    .ThirdPrize {
+        height: 570px;
+        width: 350px;
+    }
+    .display-flex {
+        display: flex;
+    }
+    .disnone {
+        display: inline;
+    }
+
+  
+}
+
+@media (max-width: 1125px){
+    .SecondPrize-pd {
+        padding-bottom: 50px;
+        transform: all 0.5s;
+    }
+    .FirstPrize-pd {
+        transform: all 0.5s;
+    }
+    .ThirdPrize-pd {
+        transform: all 0.5s;
+    }
+}
+
+.collapse-colmun {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.collapse-none {
+    transition:  all 0.2s;
+    display: none;
+}
+.collapse-inline {
+    transition:  all 0.2s;
+}
+
+.idExample {
+    padding: 0% 2%;
+    transition: all 0.1s;
+}
+
+.bg-tabs-offline {
+    background-color: rgba(3, 2, 39, 0.295);
+    color: rgb(253, 253, 253);
+}
+
+.pageinations {
+    padding: 1%;
+}
