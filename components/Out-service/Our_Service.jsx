@@ -9,22 +9,13 @@ import WA from "../../public/flex-ui-assets/icons/whatsapp.png";
 import FB from "../../public/flex-ui-assets/icons/facebook.png";
 import Money from "../../public/flex-ui-assets/icons/funds.png";
 import features from "../../public/flex-ui-assets/images/uxui/features-image.png";
-import { db_news } from '../../util/data'
-import axios from "axios";
 
 export default function Our_Service() {
 
-  const [API, setAPI] = useState([])
-    useEffect(() => {
-        axios.get(db_news.context).then((res) => {
-            setAPI(res.data[2].context)
-        })
-    }, [])
-
   return (
-    <div data-aos="fade-up" className={`md:flex justify-center grid-cols-2 gap-4 w-full ${API.filter((e) => e.status === true).length !== 0 ? '' : '-mt-64'} pb-[5%]`}>
+    <div data-aos="fade-up" className='md:flex justify-center xl:px-10 grid-cols-2 gap-4 w-full '>
       <div className="w-full md:h-screen md:flex justify-center items-center" id="services">
-        <div className="text-start w-96 text-black md:p-0 p-5 dark:text-white text-xl backdrop-blur-sm rounded">
+        <div className="text-start w-96 text-black md:p-0 px-10 dark:text-white text-xl backdrop-blur-sm rounded">
           <p className='font text-3xl font-bold underline decoration-sky-500/30 py-2'>Our Service</p>
           <p className='mb-5'>We provide domestic and international ICT services as consultants, system development, application development, and system maintenance. We cooperate with development companies to provide ICT services to overseas customers.</p>
           <div className="gap-4">

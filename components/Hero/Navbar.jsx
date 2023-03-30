@@ -33,8 +33,8 @@ export default function Navbar() {
 
   const [API, setAPI] = useState([])
   useEffect(() => {
-    axios.get(db_news.context).then((res) => {
-      setAPI(res.data[2].context)
+    axios.get(db_news).then((res) => {
+      setAPI(res.data)
     })
   }, [])
 

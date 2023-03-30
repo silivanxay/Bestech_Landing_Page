@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function LeftSide() {
 
   return (
-    <div className="z-3 p-5 mx-auto h-80 md:h-screen -mt-20 md:-mt-0 flex justify-center items-center">
+    <div className="z-3 px-10 mx-auto h-80 md:h-screen -mt-20 md:-mt-0 flex justify-center items-center">
       <div className="relative z-10 -mx-10 flex justify-center">
         <div className="px-4 backdrop-blur-sm rounded mb-12 md:w-1/2 md:mb-0">
           <Article content={heroContent}/>

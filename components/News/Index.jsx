@@ -3,13 +3,14 @@ import { db_news } from '../../util/data'
 import Image from "next/image";
 import { useState } from 'react';
 import axios from 'axios';
+import { Modal } from 'flowbite-react';
 
 export default function News() {
 
     const [API, setAPI] = useState([])
     useEffect(() => {
-        axios.get(db_news.context).then((res) => {
-            setAPI(res.data[2].context)
+        axios.get(db_news).then((res) => {
+            setAPI(res.data)
         })
     }, [])
 
@@ -31,25 +32,31 @@ export default function News() {
         nextPage(slideIndex)
     }
 
+    const [Items, setItems] = useState([])
+    const [IMG, setIMG] = useState([])
+    const [Display, setDisplay] = useState(false)
+    function modal(e) {
+        if (Display === false) {
+            setIMG(e.img)
+            setDisplay(true)
+            setItems(e.title)
+        } else {
+            setDisplay(false)
+        }
+    }
+
     return (
         API.filter((e) => e.status == true).length !== 0 ?
             <>
-
                 <section id='News' data-aos="fade-up" className="relative py-[10%] z-10 gap-2 w-full overflow-hidden xl:px-10 flex flex-wrap justify-center dark:bg-black bg-white xl:-mt-[15%] -mt-[30%]">
-
                     <>
-                        <div className="xl:absolute w-[80%] xl:w-full z-20 top-[21%] left-[24%]">
-                            <a href="#contact" className="p-0.5 backdrop-blur-3xl hover:text-white text-black dark:text-white inline-flex items-center justify-center font-bold overflow-hidden group rounded-lg">
-                                <span className="w-full h-full bg-gradient-to-br backdrop-blur-3xl from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
-                                <span className="relative px-5 py-2 transition-all ease-in-out backdrop-blur-3xl bg-white dark:bg-black rounded-lg group-hover:bg-opacity-0 duration-400">
-                                    <span className="relative">News</span>
-                                </span>
-                            </a>
+                        <div className="w-[80%] xl:translate-x-[13%] text-black dark:text-white xl:w-full z-20 text-[32px] pb-[2%] underline underline-offset-8">
+                            ປະກາດ
                         </div>
                         <div class="relative z-10 xl:w-[50%] w-[80%] max-h-[400px] h-auto bg-white border border-gray-200 rounded-lg shadow overflow-hidden object-cover dark:bg-gray-800 dark:border-gray-700">
                             {API.filter((e) => e.status == true).map((item, index) => (
                                 index == Page ?
-                                    <img data-aos="zoom-out" src={item.img} className='w-full' alt="" /> : ''
+                                    <img data-aos="zoom-out" onClick={() => modal(item)} src={item.img} className='w-full' alt="" /> : ''
                             ))}
 
 
@@ -61,7 +68,7 @@ export default function News() {
                         </div>
                         {API.filter((e) => e.status == true).map((item, index) => (
                             index == Page ?
-                                <div data-aos="zoom-out-left" class="xl:absolute z-20 top-[60%] right-[15%] xl:w-[25%] w-[80%] text-start max-h-[300px] overflow-auto p-5 border text-black dark:text-white border-gray-200 dark:backdrop-blur-[90px] backdrop-blur-[200px] rounded-lg shadow">
+                                <div data-aos="zoom-out-left" class="z-20 top-[60%] right-[15%] xl:w-[25%] w-[80%] text-start max-h-[400px] overflow-auto p-5 border text-black dark:text-white border-gray-200 dark:backdrop-blur-[90px] backdrop-blur-[200px] rounded-lg shadow">
                                     {(item.title).map((item) => (
                                         <p className='pb-2'>{item.text}</p>
                                     ))}
@@ -69,7 +76,7 @@ export default function News() {
                         ))}
 
 
-                        <div className="xl:absolute z-30 bottom-[15%] left-[26%] flex justify-center xl:justify-start w-[80%]">
+                        <div className="z-30 bottom-[15%] left-[26%] xl:translate-x-[40px] flex justify-center xl:justify-start w-[80%]">
                             <button type="button" onClick={scrollleft} class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                     <svg aria-hidden="true" class="w-5 h-5 dark:text-white sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -87,10 +94,29 @@ export default function News() {
                     </>
 
                 </section>
-                <div className="p-[10%] xl:p-[5%]"></div>
+
+
+                <div class={`fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full ${Display === false ? 'hidden' : ''}`}>
+                    <div className="absolute z-30 w-full h-full top-0 left-0" onClick={modal}></div>
+                    <div class="relative z-40 w-full h-full max-w-2xl md:h-auto flex flex-wrap justify-center items-center">
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="p-6 space-y-6">
+                                <img src={IMG} className='w-full' alt="" />
+                                {Items.map((item) => (
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-white">
+                                        {item.text}
+                                    </p>
+                                ))}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="p-[10%] xl:p-[5%]"></div> */}
 
             </>
-        : ''
+            : ''
 
     )
 }

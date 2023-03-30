@@ -30,11 +30,9 @@ export default function Contact() {
       .then(
         (result) => {
           NotifySuccess();
-          console.log(result.text);
         },
         (error) => {
           NotifyError();
-          console.log(error.text);
         }
       );
     reset();
@@ -115,7 +113,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-              <ToastContainer />
+      <ToastContainer />
     </>
   );
 }

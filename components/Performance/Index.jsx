@@ -8,8 +8,8 @@ export default function Performance() {
 
     const [API, setAPI] = useState([])
     useEffect(() => {
-        axios.get(db_performance.context).then((res) => {
-            setAPI(res.data[1].context)
+        axios.get(db_performance).then((res) => {
+            setAPI(res.data)
         })
     }, [])
 

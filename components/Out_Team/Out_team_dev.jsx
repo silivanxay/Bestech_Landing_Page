@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { db_out_team } from '../../util/data'
+import { db_dev } from '../../util/data'
 import Image from "next/image";
 import whatsapp from '../../public/flex-ui-assets/icons/whatsapp.png'
 import facebook from '../../public/flex-ui-assets/icons/facebook.png'
@@ -13,8 +13,9 @@ export default function Out_team_dev() {
     const [API, setAPI] = useState([])
     const [APIHW, setHW] = useState([])
     useEffect(() => {
-        axios.get(db_out_team.context).then((res) => {
+        axios.get(db_dev).then((res) => {
             setAPI(res.data[0].context)
+            console.log(res)
             setHW(res.data[0])
         })
     }, [])

@@ -131,17 +131,11 @@ export const dMarketingContent = {
   ],
 };
 
-export const db_out_team = {
-  context: 'https://raw.githubusercontent.com/apple122/RES-API/API/example.json'
-}
+export const db_dev = 'https://raw.githubusercontent.com/apple122/RES-API/API/Dev.json'
 
-export const db_performance = {
-  context: 'https://raw.githubusercontent.com/apple122/RES-API/API/example.json',
-}
+export const db_performance = 'https://raw.githubusercontent.com/apple122/RES-API/API/Performance.json'
 
-export const db_news = {
-  context: 'https://raw.githubusercontent.com/apple122/RES-API/API/example.json',
-}
+export const db_news = 'https://raw.githubusercontent.com/apple122/RES-API/API/News.json'
 
 export const dMarketingImage = [
   "/flex-ui-assets/images/digitalMarketing/digital marketing1-100.jpg",

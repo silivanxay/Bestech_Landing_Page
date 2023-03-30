@@ -3,7 +3,7 @@ import Image from "next/image";
 import whatsapp from '../../public/flex-ui-assets/icons/whatsapp.png'
 import facebook from '../../public/flex-ui-assets/icons/facebook.png'
 import IG from '../../public/flex-ui-assets/icons/instagram.png'
-import { db_out_team } from '../../util/data'
+import { db_dev } from '../../util/data'
 import Out_team_dev from './Out_team_dev';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -15,7 +15,7 @@ export default function Out_team() {
     const [APIHW, setHW] = useState([])
     let url = 'https://raw.githubusercontent.com/apple122/RES-API/API/example.json'
     useEffect(() => {
-        axios.get(db_out_team.context).then((res) => {
+        axios.get(db_dev).then((res) => {
             setAPI(res.data[0].context)
             setHW(res.data[0])
         })
