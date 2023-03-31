@@ -44,7 +44,7 @@ export default function Performance() {
                 <div data-aos='fade-up' class="relative w-[50vh]">
                     <div id='content' class="relative h-56 scroll-smooth overflow-x-hidden flex justify-center rounded-lg md:h-96 duration-500">
                         {API.map((item, index) => (
-                            index == Page ? <img data-aos={LR === 'right' ? 'fade-left' : 'fade-right'} src={item.img} className='object-cover bg-center bg-cover duration-500' alt="" /> : ''
+                            index == Page ? <img data-aos={LR === 'right' ? 'fade-left' : 'fade-right'} src={item.img} className='rounded object-cover bg-center bg-cover duration-500' alt="" /> : ''
                         ))}
                     </div>
                     <div className="flex top-4 justify-center gap-3 py-5 px-5 w-[50vh] overflow-hidden">
