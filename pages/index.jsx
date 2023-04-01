@@ -51,12 +51,12 @@ export default function index() {
           <div className={`SEO${Time === 4 ? 4 : 5}`}><Navbar /></div>
           <div className={`SEO${Time === 4 ? 4 : 5} overflow-hidden`}>
             <Hero />
-            <News />
             <Service />
             <Performance />
             <Out_team />
             <About />
             <Contact />
+            <News />
             <Footer />
           </div>
         </ThemeProvider>

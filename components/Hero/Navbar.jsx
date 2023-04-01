@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <nav
       className={`select-none ${scrollY > 10 ? "bg-blue-800" : "bg-white"
-        } px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600`}
+        } px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed z-50 w-full top-0 left-0 border-gray-200 dark:border-gray-600`}
     >
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center">
@@ -83,53 +83,36 @@ export default function Navbar() {
         >
           <ul
             className={`${scrollY > 10
-                ? "md:bg-blue-800 md:text-white bg-blue-100"
-                : "bg-white"
+              ? "md:bg-blue-800 md:text-white bg-blue-100"
+              : "bg-white"
               } flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
             <li onClick={() => setActive(0)}>
               <a
                 href="#"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 0
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
                   } md:p-0 dark:text-white`}
               >
                 ໜ້າຫຼັກ
               </a>
             </li>
 
-            {API.filter((e) => e.status === true).length !== 0 ?
-              <li onClick={() => setActive(1)}>
-                <a
-                  href="#News"
-                  className={`ANMCAL block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 1
-                      ? scrollY > 10
-                        ? "text-white bg-blue-700 md:border-b-4"
-                        : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                      : scrollY > 10
-                        ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                        : "text-gray-700"
-                    } md:p-0 dark:text-white`}
-                >
-                  ປະກາດ
-                </a>
-              </li>
-              : ''}
             <li onClick={() => setActive(2)}>
               <a
                 href="#services"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 2
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
                   } md:p-0 dark:text-white`}
               >
                 ບໍລິການ
@@ -140,12 +123,12 @@ export default function Navbar() {
               <a
                 href="#performance"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 3
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
                   } md:p-0 dark:text-white`}
               >
                 ຜົນງານ
@@ -155,12 +138,12 @@ export default function Navbar() {
               <a
                 href="#team"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 4
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
                   } md:p-0 dark:text-white`}
               >
                 ທີມງານ
@@ -170,12 +153,12 @@ export default function Navbar() {
               <a
                 href="#about"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 5
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
                   } md:p-0 dark:text-white`}
               >
                 ກ່ຽວກັບ
@@ -185,17 +168,35 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 6
+                  ? scrollY > 10
+                    ? "text-white bg-blue-700 md:border-b-4"
+                    : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                  : scrollY > 10
+                    ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                    : "text-gray-700"
+                  } md:p-0 dark:text-white`}
+              >
+                ຕິດຕໍ່ຫາເຮົາ
+              </a>
+            </li>
+            
+            {API.filter((e) => e.status === true).length !== 0 ?
+              <li onClick={() => setActive(1)}>
+                <a
+                  href="#News"
+                  className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 1
                     ? scrollY > 10
                       ? "text-white bg-blue-700 md:border-b-4"
                       : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
                     : scrollY > 10
                       ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
                       : "text-gray-700"
-                  } md:p-0 dark:text-white`}
-              >
-                ຕິດຕໍ່ຫາເຮົາ
-              </a>
-            </li>
+                    } md:p-0 dark:text-white`}
+                >
+                  ປະກາດ
+                </a>
+              </li>
+              : ''}
           </ul>
         </div>
       </div>

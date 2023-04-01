@@ -166,3 +166,24 @@ html {
         transform: translateY(0%);
     }
 }
+
+.opacity-background {
+    opacity: calc(0);
+    backdrop-filter: blur(500px);
+}
+.opacity-text {
+    opacity: calc(0);
+}
+.opacity-hover:hover .opacity-background {
+    opacity: calc(0.6);
+    transition: all 0.5s;
+    backdrop-filter: blur(500px);
+}
+.opacity-hover:hover .opacity-text {
+    opacity: calc(1);
+    transition: all 0.5s;
+}
+
+.scale-background {
+    transform: scale(50);
+}
