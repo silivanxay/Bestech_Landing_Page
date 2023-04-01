@@ -80,9 +80,9 @@ export default function News() {
                         </div>
                         <div className="w-[80%] xl:h-[80vh] xl:flex">
                             <div className="xl:w-[50%] w-[100%] xl:mr-4">
-                                <div class="relative z-10 max-h-[400px] h-auto bg-white border border-gray-200 rounded-lg shadow overflow-hidden object-cover dark:bg-gray-800 dark:border-gray-700">
-                                    {API.filter((e) => e.status == true).map((item, index) => (
-                                        (item.img).map((img) => (
+                                <div class="relative z-10 max-h-[550px] h-auto bg-white border border-gray-200 rounded-lg shadow overflow-hidden object-cover dark:bg-gray-800 dark:border-gray-700">
+                                    {API.filter((e) => e.status == true).slice(0, 1).map((item, index) => (
+                                        (item.img).slice(0, 1).map((img) => (
                                             <img data-aos="zoom-out" onClick={() => modal(item)} src={img.post} className='w-full' alt="" />
                                         ))
                                     ))}
@@ -96,7 +96,7 @@ export default function News() {
                                     </div>
                                 ))}
                             </div>
-                            <div className="xl:w-[50%] w-[100%] xl:mt-0 mt-4 grid grid-rows-4 grid-flow-col gap-4">
+                            <div className="xl:w-[50%] w-[100%] xl:mt-0 mt-4 h-[70vh] xl:h-full grid grid-rows-4 grid-flow-col gap-4">
                                 {API.reverse().filter((e) => e.status == true).slice(0, 3).map((item, index) => (
                                     (item.img).slice(0, 1).map((img) => (
                                         <div className="relative object-cover row-span-1 overflow-hidden rounded-lg opacity-hover">
