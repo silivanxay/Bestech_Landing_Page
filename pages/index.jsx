@@ -5,17 +5,18 @@ import "react-toastify/dist/ReactToastify.css";
 import Aos from "aos";
 import Navbar from "../components/Hero/Navbar";
 import Hero from "../components/Hero"
-import Out_team from "../components/Out_Team/Out_team";
 import { useState } from "react";
 import Contact from "../components/Contact/Contact";
 import { Footer } from "../components/Footer/Footer";
 import { About } from "../components/About/About";
 import Skeleton_page from "../components/elements/skeleton/Skeleton_page";
 import Skeleton_navbar from "../components/elements/skeleton/Skeleton_navbar";
-import Service from "../components/Out-service/Our_Service"
+import Service from "../components/Service/Service"
 import Performance from "../components/Performance/Index";
 import 'flowbite-react'
 import News from "../components/News/Index";
+import Administrator from "../components/Staff/Administrator";
+import Index_blog from "./Blog/Index.blog";
 
 
 export default function index() {
@@ -51,12 +52,12 @@ export default function index() {
           <div className={`SEO${Time === 4 ? 4 : 5}`}><Navbar /></div>
           <div className={`SEO${Time === 4 ? 4 : 5} overflow-hidden`}>
             <Hero />
+            <News />
             <Service />
             <Performance />
-            <Out_team />
+            <Administrator />
             <About />
             <Contact />
-            <News />
             <Footer />
           </div>
         </ThemeProvider>

@@ -103,6 +103,24 @@ export default function Navbar() {
               </a>
             </li>
 
+            {API.filter((e) => e.status === true).length !== 0 ?
+              <li onClick={() => setActive(1)}>
+                <a
+                  href="#News"
+                  className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 1
+                    ? scrollY > 10
+                      ? "text-white bg-blue-700 md:border-b-4"
+                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
+                    : scrollY > 10
+                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
+                      : "text-gray-700"
+                    } md:p-0 dark:text-white`}
+                >
+                  ປະກາດ
+                </a>
+              </li>
+              : ''}
+
             <li onClick={() => setActive(2)}>
               <a
                 href="#services"
@@ -180,23 +198,6 @@ export default function Navbar() {
               </a>
             </li>
             
-            {API.filter((e) => e.status === true).length !== 0 ?
-              <li onClick={() => setActive(1)}>
-                <a
-                  href="#News"
-                  className={`block py-2 text-lg pl-3 pr-4 md:hover:border-b-4 rounded md:rounded-none dark:hover:bg-gray-900 dark:md:hover:bg-black md:bg-transparent ${active === 1
-                    ? scrollY > 10
-                      ? "text-white bg-blue-700 md:border-b-4"
-                      : "md:text-blue-700 text-white bg-blue-700 md:border-b-4"
-                    : scrollY > 10
-                      ? "text-gray-700 hover:bg-blue-50 md:text-white md:hover:bg-blue-800"
-                      : "text-gray-700"
-                    } md:p-0 dark:text-white`}
-                >
-                  ປະກາດ
-                </a>
-              </li>
-              : ''}
           </ul>
         </div>
       </div>

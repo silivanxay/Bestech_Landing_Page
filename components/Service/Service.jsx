@@ -10,10 +10,10 @@ import FB from "../../public/flex-ui-assets/icons/facebook.png";
 import Money from "../../public/flex-ui-assets/icons/funds.png";
 import features from "../../public/flex-ui-assets/images/uxui/features-image.png";
 
-export default function Our_Service() {
+export default function Service() {
 
   return (
-    <div data-aos="fade-up" className='md:flex justify-center xl:px-10 grid-cols-2 gap-4 w-full '>
+    <div data-aos="fade-up" className='md:flex justify-center xl:px-10 pb-[10%] 2xl:pb-0 grid-cols-2 gap-4 w-full '>
       <div className="w-full md:h-screen md:flex justify-center items-center" id="services">
         <div className="text-start w-96 text-black md:p-0 px-10 dark:text-white text-xl backdrop-blur-sm rounded">
           <p className='font text-3xl font-bold underline decoration-sky-500/30 py-2'>Our Service</p>

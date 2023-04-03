@@ -41,7 +41,7 @@ export default function Performance() {
                 <p className='text-[32px] text-black dark:text-white font-bold underline underline-offset-8 '>Performance </p>
             </div>
             <section className="relative z-10 gap-20 overflow-hidden px-10 flex flex-wrap justify-center dark:bg-black bg-white py-20 lg:py-[120px] lg:px-[120px]">
-                <div data-aos='fade-up' class="relative w-[50vh]">
+                <div data-aos='fade-up' class="relative w-[60vh]">
                     <div id='content' class="relative h-56 scroll-smooth overflow-x-hidden flex justify-center rounded-lg md:h-96 duration-500">
                         {API.map((item, index) => (
                             index == Page ? <img data-aos={LR === 'right' ? 'fade-left' : 'fade-right'} src={item.img} className='rounded object-cover bg-center bg-cover duration-500' alt="" /> : ''

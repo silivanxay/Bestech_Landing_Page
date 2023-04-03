@@ -8,14 +8,13 @@ import whatsapp from '../../public/flex-ui-assets/icons/whatsapp.png'
 import facebook from '../../public/flex-ui-assets/icons/facebook.png'
 import IG from '../../public/flex-ui-assets/icons/instagram.png'
 
-export default function Out_team_dev() {
+export default function Developper() {
 
     const [API, setAPI] = useState([])
     const [APIHW, setHW] = useState([])
     useEffect(() => {
         axios.get(db_dev).then((res) => {
             setAPI(res.data[0].context)
-            console.log(res)
             setHW(res.data[0])
         })
     }, [])
@@ -30,7 +29,7 @@ export default function Out_team_dev() {
                 </div>
             </div>
             <div className="flex flex-wrap justify-center">
-                {API.filter((o) => o.status === 'Dev').map((item) => (
+                {API.filter((o) => o.status !== 'Chairman' && o.status !== 'Advisor').map((item) => (
                     <div data-aos="fade-up" className="relative w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                         <div className="absolute z-10 w-full h-[380px] top-0"></div>
                         <div className="flex flex-col">

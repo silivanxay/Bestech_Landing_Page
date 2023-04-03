@@ -4,12 +4,12 @@ import whatsapp from '../../public/flex-ui-assets/icons/whatsapp.png'
 import facebook from '../../public/flex-ui-assets/icons/facebook.png'
 import IG from '../../public/flex-ui-assets/icons/instagram.png'
 import { db_dev } from '../../util/data'
-import Out_team_dev from './Out_team_dev';
+import Developper from './Developper';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 
-export default function Out_team() {
+export default function Administrator() {
 
     const [API, setAPI] = useState([])
     const [APIHW, setHW] = useState([])
@@ -81,7 +81,7 @@ export default function Out_team() {
                                     ))}
                                 </div>
                             </div>
-                            <Out_team_dev />
+                            <Developper />
                         </div>
                     </div>
                 </div>

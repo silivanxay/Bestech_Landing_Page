@@ -19,9 +19,9 @@ export default function Contack_title() {
                 <span className="text-primary mb-4 block text-lg font-semibold dark:text-white">
                     Contact Us
                 </span>
-                <h2 className="text-dark flex items-center mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px] text-black dark:text-white">
+                <h2 className="text-dark flex items-center mb-6  text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px] text-black dark:text-white">
                     <Image src={IMG} width={100} height={100} alt='Bestech'/>
-                    <span className=''>Bestech SaaS</span>
+                    <span className='lg:text-[32px] text-[22px]'>Bestech SaaS Consultuncy</span>
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed text-black dark:text-white">
                     ເລີ່ມຕົ້ນການເດີນທາງຂອງທ່ານກັບການພັດທະນາຊອບແວຂອງພວກເຮົາ
