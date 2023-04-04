@@ -103,7 +103,7 @@ export default function Navbar() {
               </a>
             </li>
 
-            {API.filter((e) => e.status === true).length !== 0 ?
+            {API.length !== 0 ?
               <li onClick={() => setActive(1)}>
                 <a
                   href="#News"

@@ -19,12 +19,16 @@ function News() {
     const [Items, setItems] = useState([])
     const [Display, setDisplay] = useState(false)
 
+    console.log('Status && Display', Status, Display)
+
     return (
-        <Message_data.Provider value={{ message, setMessage, Status, setStatus, Items, setItems, Display, setDisplay }}>
+        <Message_data.Provider value={{API, message, setMessage, Status, setStatus, Items, setItems, Display, setDisplay }}>
             <Index_Blog API={API}/>
             <Blog API={API}/>
         </Message_data.Provider>
     );
 }
+
+
 
 export default News;
