@@ -65,7 +65,7 @@ export default function Service() {
           </div>
           <div className="p-2 2xl:mt-64">
             <div className="border-2 animationsTB backdrop-blur-3xl dark:text-white lg:text-white text-black rounded-lg mb-5 p-5 2xl:h-96 h-32 2xl:w-40 w-full 2xl:block flex justify-center items-center">
-              <p className='2xl:mb-20 2xl:w-full w-1/2'>Provide consultancy on the problem system development</p>
+              <p className='2xl:mb-20 2xl:w-full w-1/2'>Develop apps and websites in financial transactions</p>
               <Image
                 src={Money}
                 width={120}

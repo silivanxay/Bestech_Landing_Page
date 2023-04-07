@@ -13,7 +13,6 @@ export default function Administrator() {
 
     const [API, setAPI] = useState([])
     const [APIHW, setHW] = useState([])
-    let url = 'https://raw.githubusercontent.com/apple122/RES-API/API/example.json'
     useEffect(() => {
         axios.get(db_dev).then((res) => {
             setAPI(res.data[0].context)

@@ -17,6 +17,7 @@ import 'flowbite-react'
 import News from "../components/News/Index";
 import Administrator from "../components/Staff/Administrator";
 import Index_blog from "./Blog/Index.blog";
+import Map from "../components/Map";
 
 
 export default function index() {
@@ -58,6 +59,7 @@ export default function index() {
             <Administrator />
             <About />
             <Contact />
+            <Map />
             <Footer />
           </div>
         </ThemeProvider>
