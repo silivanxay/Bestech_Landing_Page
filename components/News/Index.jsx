@@ -19,7 +19,7 @@ function News() {
     const [Items, setItems] = useState([])
     const [Display, setDisplay] = useState(false)
 
-    console.log('Status && Display', Status, Display)
+    console.log('API', API)
 
     return (
         <Message_data.Provider value={{API, message, setMessage, Status, setStatus, Items, setItems, Display, setDisplay }}>

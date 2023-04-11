@@ -656,7 +656,6 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-    require('flowbite/plugin'),
     require("daisyui")
   ],
 };

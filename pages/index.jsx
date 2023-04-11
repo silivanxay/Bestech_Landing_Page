@@ -13,10 +13,8 @@ import Skeleton_page from "../components/elements/skeleton/Skeleton_page";
 import Skeleton_navbar from "../components/elements/skeleton/Skeleton_navbar";
 import Service from "../components/Service/Service"
 import Performance from "../components/Performance/Index";
-import 'flowbite-react'
 import News from "../components/News/Index";
 import Administrator from "../components/Staff/Administrator";
-import Index_blog from "./Blog/Index.blog";
 import Map from "../components/Map";
 
 

@@ -105,19 +105,19 @@ export default function Blog() {
                                             <p className='text-[44px] py-[5%] text-black dark:text-white'>{Items.Header}</p>
                                             <div className="lg:flex mt-4 items-center space-x-6 sm:mt-0">
                                                 <p className='text-[14px] w-full text-black dark:text-white'>{Items.Currendate}</p>
-                                                <div className='flex justify-start lg:justify-end w-full space-x-2'>
+                                                {/* <div className='flex justify-start lg:justify-end w-full space-x-2'>
                                                     <FacebookShareButton url={Items.Shares}><FacebookIcon className='w-[30px]' /></FacebookShareButton>
                                                     <TwitterShareButton url={Items.Shares}><TwitterIcon className='w-[30px]' /> </TwitterShareButton>
                                                     <WhatsappShareButton url={Items.Shares}><WhatsappIcon className='w-[30px]' /> </WhatsappShareButton>
-                                                </div>
+                                                </div> */}
                                             </div>
 
-                                            <ul class="fixed -ml-[8%] lg:inline hidden w-[100px] text-sm font-medium overflow-hidden text-center text-white border border-gray-200 rounded-lg bg-gray-700 dark:border-gray-600">
+                                            {/* <ul class="fixed -ml-[8%] lg:inline hidden w-[100px] text-sm font-medium overflow-hidden text-center text-white border border-gray-200 rounded-lg bg-gray-700 dark:border-gray-600">
                                                 <li class="w-full py-3 ">Share</li>
                                                 <li class="w-full py-3 bg-blue-800"><FacebookShareButton url={Items.Shares}>Facebook</FacebookShareButton></li>
                                                 <li class="w-full py-3 bg-blue-400"><TwitterShareButton url={Items.Shares}>Twitter</TwitterShareButton></li>
                                                 <li class="w-full py-3 bg-green-800"><WhatsappShareButton url={Items.Shares}>WhatApp</WhatsappShareButton></li>
-                                            </ul>
+                                            </ul> */}
 
 
                                             <div className={`grid grid-cols-${Items.img.length - 1} gap-4`}>

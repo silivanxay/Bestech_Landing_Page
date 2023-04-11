@@ -1,10 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import icon1 from "../../public/flex-ui-assets/icons/woman.png";
-import IMG2 from "../../public/flex-ui-assets/images/uxui/planet.png";
 import GIF from "../../public/flex-ui-assets/gif/113616-world.gif";
-import GIF1 from "../../public/flex-ui-assets/gif/Recording 2023-03-09 000518.gif";
-import GIF2 from "../../public/flex-ui-assets/gif/animation_500_lezbmyq8.gif";
 import GIF3 from "../../public/flex-ui-assets/gif/animation_500_lezztslk.gif";
 
 export default function RightSide() {
